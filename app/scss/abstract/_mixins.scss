@@ -1,0 +1,44 @@
+// Media Query
+@mixin mq($value, $constraint: min, $feature: width) {
+  @media screen and (#{$constraint}-#{$feature}: $value) {
+    @content;
+  }
+}
+
+@mixin mq-max($value, $constraint: max, $feature: width) {
+  @media screen and (#{$constraint}-#{$feature}: $value) {
+    @content;
+  }
+}
+
+@mixin flex-justify {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-align {
+  display: flex;
+  align-items: center;
+}
+
+@mixin hover-effect {
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+@mixin bckg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}
+
+@mixin full-width-abs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
