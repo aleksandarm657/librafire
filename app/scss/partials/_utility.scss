@@ -1,5 +1,6 @@
 .u-h1 {
   font-size: 40px;
+  font-weight: 600;
   
   @include mq($tablet) {
     font-size: 50px;
@@ -8,4 +9,13 @@
   @include mq($laptop) {
     font-size: 70px;
   }
+}
+
+.u-btn {
+  border: 0;
+  border-radius: 50px;
+}
+
+.u-stop-scroll {
+  overflow: hidden;
 }

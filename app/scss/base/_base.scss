@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: $font-primary;
+  font-size: 16px;
 }
 
 ol, ul {
@@ -13,6 +14,10 @@ a {
   display: inline-block;
   text-decoration: none;
   transition: $standard-tr;
+}
+
+button {
+  cursor: pointer;
 }
 
 img {

@@ -2,10 +2,129 @@
   position: absolute;
   width: 100%;
   padding: 25px 0;
+  z-index: 3;
   
   &__wrapper {
-    display: flex;
-    justify-content: flex-end;
+    @include flex-justify;
+  }
+
+  &__content {
+    @include flex-justify;
     align-items: center;
   }
+
+  &__logo {
+    min-width: 80px;
+  }
+
+  &__nav {
+    transition: $standard-tr;
+
+    @include mq-max($laptop) {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+      transform: translateX(-200%);
+      background-color: $color-primary;
+
+      .site-header__ul {
+        padding-top: 20%;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  &__ul {
+    @include flex-justify;
+
+    a {
+      padding: 10px 14px;
+      font-weight: 500;
+      color: $color-link;
+    }
+  }
+
+  &__form-wrapper {
+    padding: 0 30px;
+    margin: 0 30px 0 15px;
+    border-left: 1px solid $color-border;
+    border-right: 1px solid $color-border;
+  }
+
+  &__form {
+    padding: 5px 20px 5px 5px;
+    border-radius: 50px;
+    background-color: $color-white;
+
+    @include mq-max($phone) {
+      display: none;
+    }
+
+    @media screen and (max-width: 1360px) {
+      padding: 0;
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  &__btn {
+    padding: 10.5px 31px;
+    color: $color-white;
+    background-color: $color-primary;
+  }
+
+  &__language-switcher {
+    font-weight: 500;
+    border: 0;
+    text-transform: uppercase;
+    color: $color-link;
+    background-color: transparent;
+  }
+}
+
+.show-menu {
+  transform: translateX(0);
+}
+
+// Burger
+.burger {
+  margin-left: 23px;
+  z-index: 10;
+  cursor: pointer;
+
+  @include mq($laptop) {
+    display: none;
+  }
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 4px;
+  background-color: $color-black;
+  margin: 2px 0;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(0, 1px);
+  background-color: $color-white;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-7px, -8px);
+  background-color: $color-white;
 }

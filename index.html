@@ -1,31 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Librafire</title>
-  <link rel="stylesheet" href="dist/style.css">
-</head>
-<body>
-  <header>
-    <div>
-      <img src="assets/img/logo.png" alt="DigiSkills site logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">Training Match</a></li>
-        <li><a href="#">Digital Initiatives</a></li>
-        <li><a href="#">Inspiring Stories</a></li>
-        <li><a href="#">Our Mission</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section>
-    <h1 class="u-h1">The home of digital skills in Belgium</h1>
-  </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="app/styles/css/style.css" />
+    <title>Librafire</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="site-header__wrapper l-container">
+        <div class="site-header__logo">
+          <a href="#">
+            <img src="assets/img/logo.png" alt="DigiSkills site logo" />
+          </a>
+        </div>
+        <div class="site-header__content">
+          <nav class="site-header__nav">
+            <ul class="site-header__ul">
+              <li><a href="#">Training Match</a></li>
+              <li><a href="#">Digital Initiatives</a></li>
+              <li><a href="#">Inspiring Stories</a></li>
+              <li><a href="#">Our Mission</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="site-header__form-wrapper">
+            <form class="site-header__form">
+              <button type="submit" class="site-header__btn u-btn">
+                Log in
+              </button>
+              <span>Become a digital partner</span>
+            </form>
+          </div>
+          <select name="lanugage" class="site-header__language-switcher">
+            <option value="english">en</option>
+            <option value="spain">esp</option>
+            <option value="italian">it</option>
+            <option value="french">fr</option>
+          </select>
+          <div class="burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
 
-  <script src="/dist/script.js"></script>
-</body>
+    <!-- Hero banner -->
+    <section class="hero">
+      <div class="l-container">
+        <h1 class="u-h1">The home of digital skills in Belgium</h1>
+        <p>
+          Discover your perfect training match or explore our ambitious digital
+          initiatives!
+        </p>
+        <form class="hero__form">
+          <div class="hero__search">
+            <input type="search" placeholder="Search topics"/>
+          </div>
+          <div class="hero__select-wrapper">
+            <select class="hero__select">
+              <option disabled selected>Search project</option>
+              <option>Project 1</option>
+              <option>Project 2</option>
+              <option>Project 3</option>
+              <option>Project 4</option>
+            </select>
+          </div>
+          <div class="hero__btn-wrapper">
+            <button type="submit" class="hero__btn">Start my search</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Hero banner end -->
+
+    <script src="app/script/script.js"></script>
+  </body>
 </html>

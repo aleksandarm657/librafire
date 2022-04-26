@@ -1,0 +1,2 @@
+const burger=document.querySelector(".burger"),phoneNav=document.querySelector(".site-header__nav");burger.onclick=function(e){this.classList.toggle("change"),phoneNav.classList.toggle("show-menu"),document.querySelector("html").classList.toggle("u-stop-scroll")};
+//# sourceMappingURL=script.js.map

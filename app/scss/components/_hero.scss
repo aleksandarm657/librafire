@@ -1,0 +1,82 @@
+.hero {
+  position: relative;
+  padding: 235px 0 431px;
+  text-align: center;
+  color: $color-white;
+  background-image: url('../../../assets/img/hero.png');
+  @include bckg;
+  
+  &::after {
+    content: '';
+    @include full-width-abs;
+    mix-blend-mode: multiply;
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(#ffd2ac), to(#904607dd)) 0% 0% no-repeat padding-box;
+  }
+  
+  .l-container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .u-h1 {
+    margin-bottom: 7px;
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  &__form {
+    max-width: 799px;
+    @include flex-align;
+    justify-content: flex-end;
+    margin: 76px auto 0;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: $color-white;
+  }
+
+  &__search {
+    position: relative;
+    flex: 1.1;
+    padding: 6px 20px 6px 48px;
+    background-image: url(../../../assets/img/svg/feather-search.svg);
+    background-repeat: no-repeat;
+    background-position: 21px 50%;
+
+    input {
+      width: 100%;
+      border: 0;
+
+      &::placeholder {
+        color: $color-black;
+      }
+    }
+  }
+
+  &__select-wrapper {
+    position: relative;
+    flex: 0.9;
+    margin-right: 20px;
+    padding: 5px 20px 5px 48px;
+    border-left: 1px solid $color-border;
+    border-right: 1px solid $color-border;
+    background-image: url(../../../assets/img/svg/portfolio.svg);
+    background-repeat: no-repeat;
+    background-position: 21px 50%;
+  }
+
+  &__select {
+    width: 100%;
+    border: 0;
+  }
+
+  &__btn {
+    padding: 15.5px 31px;
+    border: 0;
+    border-radius: 50px;
+    color: $color-white;
+    background: $color-primary;
+  }
+}

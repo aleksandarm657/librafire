@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["burger","document","querySelector","phoneNav","onclick","e","this","classList","toggle"],"mappings":"AAAA,MAAMA,OAASC,SAASC,cAAc,WAChCC,SAAWF,SAASC,cAAc,qBAGxCF,OAAOI,QAAU,SAASC,GACxBC,KAAKC,UAAUC,OAAO,UACtBL,SAASI,UAAUC,OAAO,aAC1BP,SAASC,cAAc,QAAQK,UAAUC,OAAO","file":"script.js"}
