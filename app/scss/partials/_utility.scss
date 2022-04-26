@@ -40,6 +40,18 @@
   border-radius: 50px;
 }
 
+.u-link {
+  position: relative;
+  font-weight: 600;
+
+  &::after {
+    content: "→";
+    position: absolute;
+    top: 1px;
+    right: -20px;
+  }
+}
+
 .u-stop-scroll {
   overflow: hidden;
 }
