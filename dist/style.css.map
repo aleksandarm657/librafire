@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"AAAA,KACE,qBCCF","file":"style.css","sourcesContent":["body {\r\n  background-color: pink;\r\n}","body {\n  background-color: pink;\n}"]}
