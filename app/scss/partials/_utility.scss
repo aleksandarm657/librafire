@@ -11,6 +11,30 @@
   }
 }
 
+.u-h2-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+
+  img {
+    margin-right: 20px;
+  }
+}
+
+.u-h2 {
+  font-size: 30px;
+  color: $color-title;
+
+  @include mq($tablet) {
+    font-size: 40px;
+  }
+}
+
+.u-h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .u-btn {
   border: 0;
   border-radius: 50px;
@@ -18,4 +42,69 @@
 
 .u-stop-scroll {
   overflow: hidden;
+}
+
+// Colors
+.color-1 {
+  background-color: $color-1;
+}
+
+.color-1-txt {
+  color: $color-1;
+}
+
+.color-2 {
+  background-color: $color-2;
+}
+
+.color-2-txt {
+  color: $color-2;
+}
+
+.color-3 {
+  background-color: $color-3;
+}
+
+.color-3-txt {
+  color: $color-3;
+}
+
+.color-4 {
+  background-color: $color-4;
+}
+
+.color-4-txt {
+  color: $color-4;
+}
+
+.color-5 {
+  background-color: $color-5;
+}
+
+.color-5-txt {
+  color: $color-5;
+}
+
+.color-6 {
+  background-color: $color-6;
+}
+
+.color-6-txt {
+  color: $color-6;
+}
+
+.color-7 {
+  background-color: $color-7;
+}
+
+.color-7-txt {
+  color: $color-7;
+}
+
+.color-8 {
+  background-color: $color-8;
+}
+
+.color-8-txt {
+  color: $color-8;
 }
