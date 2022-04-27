@@ -1,0 +1,33 @@
+.contact {
+  padding: 100px 0;
+  background-image: url('../../../assets/img/contact.png');
+  @include bckg;
+  color: $color-white;
+
+  &__content {
+    max-width: 800px;
+    margin-left: auto;
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 500;
+
+    @include mq($tablet) {
+      font-size: 35px;
+    }
+  }
+
+  .u-h2-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .u-h2 {
+    color: $color-white;
+  }
+
+  @include mq($tablet) {
+    padding: 189px 0;
+  }
+}

@@ -80,6 +80,10 @@
     padding: 10.5px 31px;
     color: $color-white;
     background-color: $color-primary;
+
+    &:hover {
+      background-color: $color-5;
+    }
   }
 
   &__language-switcher {

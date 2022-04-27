@@ -63,6 +63,18 @@
   }
 }
 
+.u-btn--tertiary {
+  padding: 10px 30px;
+  border: 1px solid $color-white;
+  color: $color-white;
+  background-color: transparent;
+  
+  &:hover {
+    border-color: $color-primary;
+    background-color: $color-primary;
+  }
+}
+
 .u-link {
   position: relative;
   font-weight: 600;
@@ -77,6 +89,26 @@
 
 .u-stop-scroll {
   overflow: hidden;
+}
+
+.hover-link {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: $color-primary;
+    transition: all 0.3s ease-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 // Colors

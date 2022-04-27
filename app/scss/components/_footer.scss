@@ -1,0 +1,91 @@
+.site-footer {
+  padding-top: 40px;
+  background-color: $color-primary;
+  
+  &__inner {
+    @include mq($tablet-landscape) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  &__logo {
+    margin-bottom: 30px;
+  }
+  
+  &__ul {
+    li {
+      margin-bottom: 20px;
+    }
+    
+    a {
+      color: $color-white;
+    }
+  }
+  
+  &__placeholder-wrapper {
+    display: flex;
+    
+    @include mq-max($phone) {
+      flex-direction: column;
+    }
+  }
+  
+  &__placeholder {
+    display: flex;
+    flex-direction: column;
+    
+    a {
+      height: 53px;
+      width: 177px;
+      margin-bottom: 30px;
+      background-color: #36385b;
+    }
+    
+    @include mq-max($tablet-landscape) {
+      margin-right: 30px;
+    }
+    
+    @include mq($tablet-landscape) {
+      margin-left: 60px;
+    }
+  }
+  
+  &__bottom {
+    padding: 20px 0;
+    border-top: 1px solid $color-white;
+    
+    @include mq($tablet) {
+      @include flex-justify;
+      align-items: center;
+    }
+    
+    span, a {
+      font-size: 14px;
+      color: $color-white;
+    }
+    
+    a {
+      text-decoration: underline;
+
+      @include mq-max($tablet) {
+        margin-top: 15px;
+        margin-right: 30px;
+      }
+
+      @include mq($tablet) {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .hover-link {
+    &::after {
+      background-color: $color-white;
+    }
+  }
+  
+  @include mq($tablet) {
+    padding-top: 72px;
+  }
+}

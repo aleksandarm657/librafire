@@ -99,6 +99,11 @@
     border-radius: 50px;
     color: $color-white;
     background: $color-primary;
+    transition: $standard-tr;
+
+    &:hover {
+      background-color: $color-5;
+    }
   }
 
   &__arrow {
