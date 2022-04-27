@@ -1,0 +1,63 @@
+.gradient-box {
+  color: $color-white;
+  
+  .gradient-box__wrapper {
+    position: relative;
+    padding: 50px 30px;
+    background-color: $color-bckg-secondary;
+    
+    @include mq($tablet) {
+      padding: 105px 120px;
+    }
+    
+    @include mq($tablet-landscape) {
+      border-radius: 15px;
+      background-image: url('../../../assets/img/hand-bulb.png');
+      background-repeat: no-repeat;
+      background-position: right center;
+      overflow: hidden;
+      
+      &::before {
+        content: '';
+        @include full-width-abs;
+        background: linear-gradient(90deg, rgba(123, 197, 244, 1) 0%, rgba(138, 198, 233, 0.9836309523809523) 57%, rgba(255, 255, 255, 0) 97%);
+      }
+    }
+  }
+  
+  &__content {
+    position: relative;
+    max-width: 650px;
+    z-index: 1;
+  }
+  
+  .u-h2 {
+    color: $color-white;
+  }
+  
+  p {
+    margin-bottom: 30px;
+    line-height: 24px;
+  }
+  
+  &__label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 7px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    opacity: 0.4;
+    color: $color-black;
+    background: $color-white;
+    
+    @include mq($tablet) {
+      top: 20px;
+      right: 20px;
+    }
+  }
+  
+  @include mq($tablet-landscape) {
+    margin: 80px 0;
+  }
+}
