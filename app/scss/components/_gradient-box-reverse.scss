@@ -1,7 +1,8 @@
 .gradient-box-reverse {
+  margin-bottom: 40px;
   color: $color-white;
   
-  &__wrapper.l-container {
+  &__wrapper {
     position: relative;
     padding: 40px 30px;
     background-color: $color-bckg-secondary;
@@ -66,6 +67,12 @@
 
     @include mq($tablet-landscape) {
       display: block;
+    }
+  }
+
+  @include mq-max($tablet-landscape) {
+    .l-container {
+      padding: 0;
     }
   }
   

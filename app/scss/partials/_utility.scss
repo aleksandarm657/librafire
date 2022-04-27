@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-
+  
   img {
     margin-right: 20px;
   }
@@ -24,7 +24,7 @@
 .u-h2 {
   font-size: 30px;
   color: $color-title;
-
+  
   @include mq($tablet) {
     font-size: 40px;
   }
@@ -41,11 +41,22 @@
   transition: $standard-tr;
 }
 
+.u-btn--primary {
+  padding: 10px 30px;
+  color: $color-white;
+  background-color: $color-primary;
+  
+  &:hover {
+    color: $color-primary;
+    background-color: $color-white;
+  }
+}
+
 .u-btn--secondary {
   padding: 10px 30px;
   color: $color-primary;
   background-color: $color-white;
-
+  
   &:hover {
     color: $color-white;
     background-color: $color-primary;
@@ -55,7 +66,7 @@
 .u-link {
   position: relative;
   font-weight: 600;
-
+  
   &::after {
     content: "→";
     position: absolute;

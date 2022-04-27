@@ -1,0 +1,78 @@
+.video {
+  padding: 40px 0;
+  background-color: $color-bckg;
+
+  &__wrapper {
+    @include mq($tablet) {
+      display: flex;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+
+    @include mq($tablet) {
+      flex: 1;
+      margin-bottom: 0;
+    }
+  }
+
+  &__text-inner {
+    @include mq($tablet) {
+      width: 87%;
+    }
+  }
+
+  &__content {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+
+    @include mq($tablet) {
+      flex: 1;
+    }
+  }
+
+  &__thumbnail {
+    position: relative;
+    height: 100%;
+    display: flex;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &::after {
+      content: '';
+      @include full-width-abs;
+      background-color: $color-black;
+      opacity: 0.39;
+    }
+  }
+
+  &__play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 61px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  h4 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: $color-title;
+  }
+
+  p {
+    margin-bottom: 30px;
+    line-height: 24px;
+    color: $color-text;
+  }
+
+  @include mq($tablet) {
+    padding: 80px 0;
+  }
+}
